@@ -3,132 +3,103 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Créer son site vitrine avec Vibe et GitHub Pages — le guide pratique</title>
-<meta name="description" content="Guide pas à pas pour artisans et indépendants : créer un site vitrine gratuit avec Vibe et GitHub Pages, sans compétence technique.">
+<title>Vibe WebMaster — Créez votre site vitrine gratuitement, sans compétence technique</title>
+<meta name="description" content="Guide détaillé et gratuit pour créer et mettre en ligne votre site vitrine avec Vibe et GitHub Pages, étape par étape, sans aucune compétence en informatique.">
 <link rel="canonical" href="https://arnauddelgerie.github.io/vibe-webmaster/">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Créer son site vitrine avec Vibe et GitHub Pages">
-<meta property="og:description" content="Le guide pratique pour exister sur internet sans être développeur : Vibe fait la technique, vous fournissez le contenu.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vibe WebMaster">
+<meta property="og:title" content="Vibe WebMaster — Créez votre site vitrine gratuitement, sans compétence technique">
+<meta property="og:description" content="Guide détaillé et gratuit pour créer et mettre en ligne votre site vitrine avec Vibe et GitHub Pages, étape par étape, sans aucune compétence en informatique.">
 <meta property="og:url" content="https://arnauddelgerie.github.io/vibe-webmaster/">
-<meta property="og:image" content="https://arnauddelgerie.github.io/vibe-webmaster/images/vibe-skills-import.png">
-<meta name="twitter:card" content="summary_large_image">
-<style>
-:root{--ink:#1d2733;--muted:#5b6675;--bg:#fbfaf7;--card:#ffffff;--line:#e5e1d8;--brand:#0d5c4d;--brand-ink:#083f35;--accent:#c46a2b}
-*{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}
-header{background:var(--brand);color:#fff;padding:3rem 1.25rem 2.5rem}
-.wrap{max-width:820px;margin:0 auto}
-header h1{margin:0 0 .5rem;font-size:2rem;line-height:1.25}
-header p{margin:0;color:#d9efe9;font-size:1.05rem}
-main{padding:2rem 1.25rem 3rem}
-h2{color:var(--brand-ink);margin-top:2.5rem;font-size:1.45rem;border-bottom:2px solid var(--line);padding-bottom:.35rem}
-h2:first-of-type{margin-top:1rem}
-ol li{margin-bottom:.6rem}
-img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:var(--card)}
-figure{margin:1.5rem 0;text-align:center}
-figcaption{font-size:.9rem;color:var(--muted)}
-blockquote{margin:1.25rem 0;padding:.75rem 1.1rem;border-left:4px solid var(--accent);background:var(--card);border-radius:0 8px 8px 0}
-code{background:#eee9df;padding:.1rem .35rem;border-radius:4px;font-size:.92em}
-.recap{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.25rem 1.5rem;margin-top:2.5rem}
-.recap h2{border:none;margin:0 0 .75rem;padding:0}
-footer{border-top:1px solid var(--line);padding:1.5rem 1.25rem;color:var(--muted);font-size:.9rem;text-align:center}
-a{color:var(--brand)}
-@media (max-width:600px){header h1{font-size:1.55rem}}
-</style>
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="assets/theme.css">
+<link rel="stylesheet" href="assets/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Vibe WebMaster",
+  "url": "https://arnauddelgerie.github.io/vibe-webmaster/",
+  "description": "Guide détaillé et gratuit pour créer et mettre en ligne son site vitrine avec Vibe et GitHub Pages, sans compétence technique.",
+  "inLanguage": "fr"
+}
+</script>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <h1>Créer son site vitrine avec Vibe et GitHub Pages</h1>
-    <p>Le guide pratique pour exister sur internet sans être développeur.</p>
+<a class="skip-link" href="#accueil">Aller au contenu</a>
+<header class="site-header" id="top">
+  <div class="container">
+    <a class="brand" href="#top">Vibe WebMaster</a>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#concept">Le concept</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
-<main class="wrap">
-<p>Bienvenue sur ce guide pratique, pensé pour les artisans, indépendants et petites entreprises qui veulent exister sur internet <strong>sans se former en informatique</strong>. À la fin de ce parcours, vous aurez un site en ligne, gratuit, rapide, que vous mettez à jour en quelques minutes — en parlant simplement à votre assistant Vibe.</p>
-
-<h2>Pourquoi GitHub Pages ?</h2>
-<p>Un site vitrine, c'est votre boutique sur internet : ouverte 24h/24, elle vous présente, montre vos réalisations et donne un moyen simple de vous contacter. GitHub Pages est un service <strong>gratuit</strong> de la société GitHub qui héberge ce genre de site sans publicité et sans abonnement. Vibe s'occupe de toute la technique à votre place : vous lui fournissez le contenu (vos textes, vos photos), il fabrique les pages, les règle pour Google et les met en ligne.</p>
-
-<h2>Ce qu'il vous faut avant de commencer</h2>
-<ul>
-  <li>Un ordinateur et une connexion internet.</li>
-  <li>Un compte GitHub (gratuit) — c'est votre « espace de rangement » en ligne.</li>
-  <li>L'application Vibe, connectée à votre compte GitHub.</li>
-  <li>Vos contenus : quelques phrases sur vous, votre métier, vos réalisations, et vos plus belles photos.</li>
-</ul>
-
-<h2>Étape 1 — Préparer ses espaces GitHub</h2>
-<p>GitHub fonctionne avec des « espaces de rangement » (on appelle ça des <em>dépôts</em>). Pour un site avec Vibe, on en utilise deux :</p>
-<ul>
-  <li><strong>L'espace du contenu</strong> : il contient vos textes et vos images, comme un classeur où vous rangez vos fiches. Un fichier par sujet : <code>presentation.md</code>, <code>realisations.md</code>…</li>
-  <li><strong>L'espace du site</strong> : c'est l'espace que GitHub Pages publie automatiquement. Vous n'y touchez jamais : Vibe le remplit à partir de l'espace du contenu.</li>
-</ul>
-<p><strong>Concrètement, sur github.com :</strong> créez un premier espace, nommez-le par exemple <code>monsite.source</code>, et un second nommé exactement <code>votre-pseudo.github.io</code> (remplacez <code>votre-pseudo</code> par votre identifiant GitHub). Ce nom précis est la formule magique : GitHub Pages comprend que tout ce qui y est rangé doit être publié sur <code>https://votre-pseudo.github.io</code>.</p>
-<blockquote><strong>À retenir :</strong> le contenu se lit dans l'espace du contenu, le site rendu s'écrit dans l'espace du site. Jamais l'inverse.</blockquote>
-
-<h2>Étape 2 — Préparer Vibe avec les « skills »</h2>
-<p>Un <em>skill</em> est une instruction-règle que Vibe peut réutiliser : on la configure une fois, puis on l'appelle quand on en a besoin — un peu comme une recette notée sur un carnet. C'est ce qui évite de réexpliquer à chaque fois comment sont organisés vos espaces, comment doit être générée une page, quelles règles de référencement appliquer.</p>
-<p>Pour en ajouter : dans Vibe, ouvrez la fenêtre <strong>Skills</strong>, puis cliquez sur <strong>Importer</strong> (ou <strong>+ Nouveau skill</strong> si vous partez de zéro). Vous pouvez importer un fichier ou un dossier de skill tout prêt :</p>
-<figure>
-  <img src="images/vibe-skills-import.png" alt="Fenêtre Skills de Vibe : onglets Mes skills et Partagées, boutons Importer et Nouveau skill" width="1044" height="193" loading="lazy">
-  <figcaption>La fenêtre Skills de Vibe, avec ses boutons Importer et Nouveau skill.</figcaption>
-</figure>
-<p>Ce guide lui-même est fabriqué avec un skill « webmaster » : c'est lui qui impose le plan de travail (vérifier l'état du projet, préparer une préversion, attendre votre accord, publier).</p>
-
-<h2>Étape 3 — Rédiger son contenu</h2>
-<p>Dans l'espace du contenu, vous écrivez vos textes dans des fichiers simples. Pas de mise en page compliquée : quelques conventions suffisent.</p>
-<ul>
-  <li>Un <code>#</code> en début de ligne crée un titre de section.</li>
-  <li>Un <code>![texte](chemin/vers/photo.jpg)</code> insère une photo.</li>
-  <li>Les images se rangent dans le dossier <code>images/</code>.</li>
-</ul>
-<p>Quelques conseils rédaction :</p>
-<ol>
-  <li><strong>Une page = un sujet.</strong> Une présentation, une page réalisations, une page contact. Simple à lire, simple à référencer.</li>
-  <li><strong>Écrivez comme vous parlez.</strong> Vous n'êtes pas en dissertation : vous présentez votre métier à un voisin.</li>
-  <li><strong>Soignez vos photos</strong> : lumineuses, nettes, orientées paysage de préférence. Une belle photo vaut tous les discours.</li>
-  <li><strong>Pensez aux mots que vos clients tapent sur Google</strong> (« plombier Pau », « tapissier d'ameublement Bordeaux ») et utilisez-les naturellement dans vos textes.</li>
-</ol>
-
-<h2>Étape 4 — Générer et essayer son site</h2>
-<p>Demandez ensuite à Vibe : <em>« génère mon site à partir de mon contenu »</em>. Il fabrique alors les pages, les règle pour Google (titres, descriptions, données de contact lisibles par les moteurs), et prépare un <strong>sitemap</strong> — le plan du site que Google consulte.</p>
-<p>Règle d'or du flux de travail : <strong>tout changement passe d'abord par une préversion</strong>. C'est votre showroom privé : vous le téléchargez, vous l'ouvrez sur votre ordinateur, vous cliquez partout. Rien n'est publié sans votre accord explicite. C'est Vibe qui gère ces allers-retours.</p>
-<ul>
-  <li>Vous demandez une modification → il prépare une préversion.</li>
-  <li>Vous essayez chez vous → il corrige.</li>
-  <li>Vous validez → il publie dans la version en ligne.</li>
-</ul>
-
-<h2>Étape 5 — Mettre en ligne</h2>
-<p>Quand la préversion vous plaît, dites simplement <em>« je valide, mets en ligne »</em>. Vibe publie alors le site sur GitHub Pages, et votre page devient accessible à l'adresse <code>https://votre-pseudo.github.io</code>. Comptez quelques minutes pour que GitHub l'active la toute première fois.</p>
-<p>Votre site est en ligne : il ne reste qu'à le faire vivre.</p>
-
-<h2>Et après ? Faire vivre son site</h2>
-<p>Un site vitrine n'est pas figé. Quelques réflexes simples :</p>
-<ul>
-  <li><strong>Ajoutez une réalisation</strong> dès qu'elle est photogénique : deux photos, trois phrases, et Vibe s'occupe du reste.</li>
-  <li><strong>Relisez vos infos</strong> de temps en temps : horaires, téléphone, zone d'intervention. Une info périmée fait fuir les clients.</li>
-  <li><strong>Regardez la version de travail</strong> plutôt que la version en ligne quand vous hésitez : c'est fait pour ça.</li>
-</ul>
-<p>Et si un jour quelque chose casse, pas de panique : on peut toujours <strong>revenir en arrière</strong> — chaque publication est historisée, et un retour à la version précédente se fait en une demande.</p>
-
-<section class="recap">
-<h2>Récapitulatif</h2>
-<ol>
-  <li>Créer ses deux espaces GitHub (contenu + site).</li>
-  <li>Importer le skill webmaster dans Vibe.</li>
-  <li>Rédiger ses textes et ranger ses photos dans l'espace du contenu.</li>
-  <li>Demander la génération, essayer la préversion chez soi.</li>
-  <li>Valider — le site est en ligne.</li>
-</ol>
-<p><strong>Bonnes créations !</strong></p>
-</section>
+<main>
+  <div class="hero">
+    <div class="container">
+      <h1>Créez votre site vitrine gratuitement, sans compétence technique</h1>
+      <p>Votre assistant IA s'occupe de toute la technique ; GitHub Pages héberge votre site gratuitement. Ce guide vous accompagne étape par étape, de la création de votre compte Mistral à la mise en ligne.</p>
+    </div>
+  </div>
+  <div class="container">
+    <section id="accueil" aria-labelledby="accueil-title">
+      <h2 id="accueil-title">Accueil</h2>
+      <p>Ce site est un <strong>guide détaillé, gratuit, pour créer et mettre en ligne votre site vitrine</strong> — étape par étape, avec des captures d'écran, sans aucune compétence en informatique.</p>
+      <h3>Ce que vous obtenez au final</h3>
+      <ul>
+        <li>Un site vitrine professionnel : votre présentation, vos services, vos réalisations, vos coordonnées.</li>
+        <li>Hébergé en ligne, à une adresse permanente, visible sur Google.</li>
+        <li>Que vous pouvez faire évoluer quand vous voulez, en quelques minutes.</li>
+      </ul>
+      <h3>Avec quels outils</h3>
+      <ul>
+        <li><strong>Vibe</strong>, votre assistant IA — vous lui parlez en français, il s'occupe de toute la technique. Son forfait gratuit suffit pour tester, voire réaliser un petit site ; les usages plus importants passent par une offre payante.</li>
+        <li><strong>GitHub et GitHub Pages</strong>, qui hébergent votre site gratuitement, sans publicité.</li>
+      </ul>
+      <h3>Le coût réel : 0 €</h3>
+      <p>Tout est gratuit, sauf deux cas optionnels : si vous dépassez le forfait gratuit de Vibe (site long ou étalé sur plusieurs mois), et si vous voulez un nom de domaine personnalisé (<code>mon-entreprise.fr</code> au lieu de <code>pseudo.github.io</code>). Sans ces deux options, vous ne payez rien.</p>
+      <p>Pas de formulaire, pas d'inscription à ce site : lisez, suivez les étapes, et votre site existe.</p>
+      <p class="cta-row"><a class="button" href="#concept">Découvrir le concept</a></p>
+    </section>
+    <section id="concept" class="section-alt" aria-labelledby="concept-title">
+      <h2 id="concept-title">Le concept</h2>
+      <p>Un site vitrine, c'est votre boutique sur internet : ouverte 24h/24, elle vous présente, montre vos réalisations et rassure vos futurs clients. Encore faut-il qu'elle existe — et c'est là que ça se complique souvent : hébergement, techniques, coûts. Ce site vous explique une autre voie : <strong>un site statique, fabriqué et mis en ligne par un assistant IA, gratuitement</strong>.</p>
+      <h3>Un site statique, c'est quoi ?</h3>
+      <p>Quand on visite un site, deux grandes familles existent :</p>
+      <ul>
+        <li><strong>Le site dynamique</strong> : chaque page est fabriquée sur le moment par un serveur, qui va chercher les infos dans une base de données. C'est ce que font les boutiques en ligne ou les réseaux sociaux. Puissant — mais compliqué à construire, à maintenir, et payant.</li>
+        <li><strong>Le site statique</strong> : les pages sont préparées à l'avance et livrées telles quelles, comme les pages d'une brochure imprimée. Le serveur n'a rien à calculer : il affiche, point. Résultat : un site <strong>rapide</strong>, qui <strong>tombe rarement en panne</strong>, et très simple à héberger — donc gratuit.</li>
+      </ul>
+      <p>Pour un site vitrine, le statique suffit largement : présenter votre métier, vos réalisations, vos coordonnées. Mais il a des limites honnêtes à connaître :</p>
+      <ul>
+        <li><strong>Pas de base de données</strong> : impossible d'avoir un compte client, un panier, ou des avis déposés par vos visiteurs.</li>
+        <li><strong>Pas d'espace membre ni de connexion</strong> : personne ne « se connecte » à un site vitrine.</li>
+        <li><strong>Pas de contenu vivant</strong> : réservation en ligne, formulaire enregistré côté serveur… ça n'existe pas ici.</li>
+        <li><strong>Toute mise à jour demande une republication</strong> : modifier un texte ou une photo signifie fabriquer une nouvelle version du site et la remettre en ligne.</li>
+      </ul>
+      <h3>Comment Vibe WebMaster fait disparaître ces limites</h3>
+      <p>Ces limitations ne disparaissent pas — elles deviennent <strong>invisibles pour vous</strong> :</p>
+      <ul>
+        <li><strong>Mise à jour sans technique</strong> : la republication, c'est le travail de l'assistant, pas le vôtre. Vous demandez « change mes horaires », il modifie, vous vérifiez une préversion, vous validez, il publie. Trois minutes, zéro compétence.</li>
+        <li><strong>Pas de base de données, mais un classeur bien rangé</strong> : votre contenu vit dans un espace GitHub structuré et versionné — chaque modification est historisée, et on peut toujours revenir en arrière.</li>
+        <li><strong>Pas de panneau d'administration, mais une interface en français</strong> : là où un site dynamique vous donnerait un écran de réglages (et sa formation), vous parlez simplement à votre assistant.</li>
+      </ul>
+      <p>Ce qui reste impossible l'est pour de bon : une boutique en ligne complète, un espace client, des réservations en temps réel — ce n'est pas l'objet d'un site vitrine, et ce guide ne vous les promettra pas.</p>
+      <h3>GitHub Pages : un hébergement gratuit, avec ses règles</h3>
+      <p>Le site est hébergé par <strong>GitHub Pages</strong>, un service gratuit de GitHub : pas de publicité, pas d'abonnement, pas de piège. En échange, il fonctionne avec quelques limites : <strong>1 Go</strong> de taille maximale pour le site, et environ <strong>100 Go</strong> de données servies par mois — plusieurs dizaines de milliers de pages vues par mois, très au-delà de ce que la très grande majorité des sites vitrine demande en pratique.</p>
+    </section>
+  </div>
 </main>
 <footer>
-  <p>Guide fabriqué avec <a href="https://github.com/ArnaudDelgerie/vibe-webmaster">Vibe</a> — hébergé gratuitement par GitHub Pages.</p>
+  <div class="container">
+    <p>Vibe WebMaster — un guide gratuit pour exister sur internet, sans être développeur.</p>
+  </div>
 </footer>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Créer son site vitrine avec Vibe et GitHub Pages","description":"Guide pas à pas pour artisans et indépendants : créer un site vitrine gratuit avec Vibe et GitHub Pages, sans compétence technique.","inLanguage":"fr","image":"https://arnauddelgerie.github.io/vibe-webmaster/images/vibe-skills-import.png","author":{"@type":"Person","name":"Arnaud Delgerie"},"publisher":{"@type":"Organization","name":"Arnaud Delgerie"}}
-</script>
 </body>
 </html>
