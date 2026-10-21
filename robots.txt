@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arnauddelgerie.github.io/vibe-webmaster/sitemap.xml
