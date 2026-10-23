@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vibe WebMaster — Créez votre site vitrine gratuitement, sans compétence technique</title>
-<meta name="description" content="Guide détaillé et gratuit pour créer et mettre en ligne votre site vitrine avec Vibe et GitHub Pages, étape par étape, sans aucune compétence en informatique.">
+<title>Vibe WebMaster — Créez gratuitement votre site vitrine avec un assistant IA</title>
+<meta name="description" content="Guide complet et gratuit pour créer un site vitrine statique et le mettre en ligne avec Mistral Vibe, GitHub et GitHub Pages — sans aucune compétence technique.">
 <link rel="canonical" href="https://arnauddelgerie.github.io/vibe-webmaster/">
-<meta name="robots" content="index, follow">
+<meta property="og:title" content="Vibe WebMaster — Créez gratuitement votre site vitrine avec un assistant IA">
+<meta property="og:description" content="Guide complet et gratuit pour créer un site vitrine statique et le mettre en ligne avec Mistral Vibe, GitHub et GitHub Pages — sans aucune compétence technique.">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Vibe WebMaster">
-<meta property="og:title" content="Vibe WebMaster — Créez votre site vitrine gratuitement, sans compétence technique">
-<meta property="og:description" content="Guide détaillé et gratuit pour créer et mettre en ligne votre site vitrine avec Vibe et GitHub Pages, étape par étape, sans aucune compétence en informatique.">
 <meta property="og:url" content="https://arnauddelgerie.github.io/vibe-webmaster/">
-<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://arnauddelgerie.github.io/vibe-webmaster/assets/img/vibe-skills-import-1024.png">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="assets/theme.css">
 <link rel="stylesheet" href="assets/main.css">
@@ -22,84 +20,71 @@
   "@type": "WebSite",
   "name": "Vibe WebMaster",
   "url": "https://arnauddelgerie.github.io/vibe-webmaster/",
-  "description": "Guide détaillé et gratuit pour créer et mettre en ligne son site vitrine avec Vibe et GitHub Pages, sans compétence technique.",
+  "description": "Guide complet et gratuit pour créer un site vitrine statique et le mettre en ligne avec Mistral Vibe, GitHub et GitHub Pages — sans aucune compétence technique.",
   "inLanguage": "fr"
 }
 </script>
 </head>
 <body>
 <a class="skip-link" href="#accueil">Aller au contenu</a>
-<header class="site-header" id="top">
-  <div class="container">
-    <a class="brand" href="#top">Vibe WebMaster</a>
-    <nav aria-label="Menu principal">
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#concept">Le concept</a></li>
-      </ul>
-    </nav>
-  </div>
+<header>
+<nav class="site-nav" aria-label="Navigation principale">
+  <ul>
+    <li><a class="brand" href="./">Vibe WebMaster</a></li>
+    <li><a href="./#presentation">Présentation</a></li>
+    <li><a href="./01-guide-github/">Guide GitHub</a></li>
+    <li><a href="./02-guide-vibe/">Guide Mistral Vibe</a></li>
+  </ul>
+</nav>
 </header>
-<main>
-  <div class="hero">
-    <div class="container">
-      <h1>Créez votre site vitrine gratuitement, sans compétence technique</h1>
-      <p>Votre assistant IA s'occupe de toute la technique ; GitHub Pages héberge votre site gratuitement. Ce guide vous accompagne étape par étape, de la création de votre compte Mistral à la mise en ligne.</p>
+<main id="accueil">
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <h1 id="hero-title">Créer <span class="accent">gratuitement</span> un site comme ce site, grâce à ce site.</h1>
+  </section>
+
+  <section class="page-section" id="presentation" aria-labelledby="presentation-title">
+    <h2 id="presentation-title">Présentation</h2>
+    <p>Cette page vous explique comment créer un agent Webmaster avec Mistral Vibe, qui vous aidera à créer un site web statique et à l'héberger gratuitement grâce à GitHub et aux GitHub Pages.</p>
+    <h3>Un site statique, c'est quoi ?</h3>
+    <p>Un site statique est un site fait de fichiers figés : des pages HTML préparées à l'avance, servies telles quelles au visiteur. C'est une solution rapide, simple et sécurisée — il n'y a pas grand-chose à pirater — ce qui la rend idéale pour des sites vitrines, des portfolios, etc. En contrepartie, un site statique n'a ni base de données ni code exécuté côté serveur : il ne peut pas gérer la création de comptes utilisateurs ni la publication de contenu dynamique. Chaque modification ou ajout suppose d'éditer puis de republier les fichiers du site — et c'est précisément le rôle de l'agent Webmaster.</p>
+    <h3>GitHub, une plateforme d'hébergement de « dossiers versionnés »</h3>
+    <p>GitHub est une plateforme qui héberge des repositories : des « dossiers versionnés », gérés ici avec un outil appelé Git. L'agent Webmaster a besoin de 2 repositories par site : le premier, la source, contient toutes les informations et contenus bruts destinés au site ; le second héberge le site généré. GitHub Pages sera activé uniquement sur ce second repository, afin de le mettre en ligne.</p>
+    <h3>GitHub Pages, un hébergement gratuit avec ses limites</h3>
+    <p>GitHub Pages est un service gratuit, avec quelques limites : 1 Go de stockage maximum par site et 100 Go de bande passante par mois. À titre d'exemple, ce site pèse moins de 5 Mo (0,005 Go) : la limite de bande passante permet donc un peu plus de 20 000 vues par mois, ce qui est en général largement suffisant pour ce type de site.</p>
+    <p>GitHub Pages fournit des URL par défaut aux sites hébergés ; vous pourrez aussi définir un nom de domaine personnalisé si vous en possédez un. Ce guide ne traite pas de l'achat d'un nom de domaine.</p>
+    <h3>Adapté à votre IA préférée</h3>
+    <p>Les explications et ressources de ce guide ont été conçues pour Mistral Vibe, mais s'adaptent facilement à votre IA préférée.</p>
+  </section>
+
+  <section class="page-section alt" id="guide-complet" aria-labelledby="guide-title">
+    <h2 id="guide-title">Guide complet</h2>
+    <p>Le guide est divisé en deux parties complémentaires : la mise en place sur GitHub (création des comptes et des dossiers du site), puis la création de l'agent Webmaster dans Mistral Vibe.</p>
+    <div class="tiles">
+      <a class="tile" href="./01-guide-github/">
+        <span class="step-badge">Étape 1</span>
+        <h3>Guide GitHub</h3>
+        <p>Créez votre compte, les deux dossiers du site et mettez-le en ligne.</p>
+      </a>
+      <a class="tile" href="./02-guide-vibe/">
+        <span class="step-badge">Étape 2</span>
+        <h3>Guide Mistral Vibe</h3>
+        <p>Créez votre projet dans Vibe et importez le dossier de skills de l'agent Webmaster.</p>
+      </a>
     </div>
-  </div>
-  <div class="container">
-    <section id="accueil" aria-labelledby="accueil-title">
-      <h2 id="accueil-title">Accueil</h2>
-      <p>Ce site est un <strong>guide détaillé, gratuit, pour créer et mettre en ligne votre site vitrine</strong> — étape par étape, avec des captures d'écran, sans aucune compétence en informatique.</p>
-      <h3>Ce que vous obtenez au final</h3>
-      <ul>
-        <li>Un site vitrine professionnel : votre présentation, vos services, vos réalisations, vos coordonnées.</li>
-        <li>Hébergé en ligne, à une adresse permanente, visible sur Google.</li>
-        <li>Que vous pouvez faire évoluer quand vous voulez, en quelques minutes.</li>
-      </ul>
-      <h3>Avec quels outils</h3>
-      <ul>
-        <li><strong>Vibe</strong>, votre assistant IA — vous lui parlez en français, il s'occupe de toute la technique. Son forfait gratuit suffit pour tester, voire réaliser un petit site ; les usages plus importants passent par une offre payante.</li>
-        <li><strong>GitHub et GitHub Pages</strong>, qui hébergent votre site gratuitement, sans publicité.</li>
-      </ul>
-      <h3>Le coût réel : 0 €</h3>
-      <p>Tout est gratuit, sauf deux cas optionnels : si vous dépassez le forfait gratuit de Vibe (site long ou étalé sur plusieurs mois), et si vous voulez un nom de domaine personnalisé (<code>mon-entreprise.fr</code> au lieu de <code>pseudo.github.io</code>). Sans ces deux options, vous ne payez rien.</p>
-      <p>Pas de formulaire, pas d'inscription à ce site : lisez, suivez les étapes, et votre site existe.</p>
-      <p class="cta-row"><a class="button" href="#concept">Découvrir le concept</a></p>
-    </section>
-    <section id="concept" class="section-alt" aria-labelledby="concept-title">
-      <h2 id="concept-title">Le concept</h2>
-      <p>Un site vitrine, c'est votre boutique sur internet : ouverte 24h/24, elle vous présente, montre vos réalisations et rassure vos futurs clients. Encore faut-il qu'elle existe — et c'est là que ça se complique souvent : hébergement, techniques, coûts. Ce site vous explique une autre voie : <strong>un site statique, fabriqué et mis en ligne par un assistant IA, gratuitement</strong>.</p>
-      <h3>Un site statique, c'est quoi ?</h3>
-      <p>Quand on visite un site, deux grandes familles existent :</p>
-      <ul>
-        <li><strong>Le site dynamique</strong> : chaque page est fabriquée sur le moment par un serveur, qui va chercher les infos dans une base de données. C'est ce que font les boutiques en ligne ou les réseaux sociaux. Puissant — mais compliqué à construire, à maintenir, et payant.</li>
-        <li><strong>Le site statique</strong> : les pages sont préparées à l'avance et livrées telles quelles, comme les pages d'une brochure imprimée. Le serveur n'a rien à calculer : il affiche, point. Résultat : un site <strong>rapide</strong>, qui <strong>tombe rarement en panne</strong>, et très simple à héberger — donc gratuit.</li>
-      </ul>
-      <p>Pour un site vitrine, le statique suffit largement : présenter votre métier, vos réalisations, vos coordonnées. Mais il a des limites honnêtes à connaître :</p>
-      <ul>
-        <li><strong>Pas de base de données</strong> : impossible d'avoir un compte client, un panier, ou des avis déposés par vos visiteurs.</li>
-        <li><strong>Pas d'espace membre ni de connexion</strong> : personne ne « se connecte » à un site vitrine.</li>
-        <li><strong>Pas de contenu vivant</strong> : réservation en ligne, formulaire enregistré côté serveur… ça n'existe pas ici.</li>
-        <li><strong>Toute mise à jour demande une republication</strong> : modifier un texte ou une photo signifie fabriquer une nouvelle version du site et la remettre en ligne.</li>
-      </ul>
-      <h3>Comment Vibe WebMaster fait disparaître ces limites</h3>
-      <p>Ces limitations ne disparaissent pas — elles deviennent <strong>invisibles pour vous</strong> :</p>
-      <ul>
-        <li><strong>Mise à jour sans technique</strong> : la republication, c'est le travail de l'assistant, pas le vôtre. Vous demandez « change mes horaires », il modifie, vous vérifiez une préversion, vous validez, il publie. Trois minutes, zéro compétence.</li>
-        <li><strong>Pas de base de données, mais un classeur bien rangé</strong> : votre contenu vit dans un espace GitHub structuré et versionné — chaque modification est historisée, et on peut toujours revenir en arrière.</li>
-        <li><strong>Pas de panneau d'administration, mais une interface en français</strong> : là où un site dynamique vous donnerait un écran de réglages (et sa formation), vous parlez simplement à votre assistant.</li>
-      </ul>
-      <p>Ce qui reste impossible l'est pour de bon : une boutique en ligne complète, un espace client, des réservations en temps réel — ce n'est pas l'objet d'un site vitrine, et ce guide ne vous les promettra pas.</p>
-      <h3>GitHub Pages : un hébergement gratuit, avec ses règles</h3>
-      <p>Le site est hébergé par <strong>GitHub Pages</strong>, un service gratuit de GitHub : pas de publicité, pas d'abonnement, pas de piège. En échange, il fonctionne avec quelques limites : <strong>1 Go</strong> de taille maximale pour le site, et environ <strong>100 Go</strong> de données servies par mois — plusieurs dizaines de milliers de pages vues par mois, très au-delà de ce que la très grande majorité des sites vitrine demande en pratique.</p>
-    </section>
-  </div>
+  </section>
 </main>
-<footer>
-  <div class="container">
-    <p>Vibe WebMaster — un guide gratuit pour exister sur internet, sans être développeur.</p>
-  </div>
+<footer class="site-footer">
+  <p>Vibe WebMaster — guide gratuit pour créer votre site vitrine avec un assistant IA.</p>
 </footer>
+<script>
+(function () {
+  var nav = document.querySelector('.site-nav');
+  function onScroll() {
+    nav.classList.toggle('scrolled', window.scrollY > 24);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
 </body>
 </html>
