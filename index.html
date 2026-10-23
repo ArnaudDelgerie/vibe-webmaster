@@ -29,9 +29,11 @@
 <a class="skip-link" href="#accueil">Aller au contenu</a>
 <header>
 <nav class="site-nav" aria-label="Navigation principale">
-  <ul>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Ouvrir le menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="menu-principal">
     <li><a class="brand" href="./index.html">Vibe WebMaster</a></li>
-    <li><a href="./index.html#presentation">Présentation</a></li>
     <li><a href="./01-guide-github/index.html">Guide GitHub</a></li>
     <li><a href="./02-guide-vibe/index.html">Guide Mistral Vibe</a></li>
   </ul>
@@ -39,7 +41,7 @@
 </header>
 <main id="accueil">
   <section class="hero" id="hero" aria-labelledby="hero-title">
-    <h1 id="hero-title">Créer <span class="accent">gratuitement</span> un site comme ce site, grâce à ce site.</h1>
+    <h1 id="hero-title">Créer <span class="accent">gratuitement</span> un site <s>comme</s> <em class="better">encore mieux que</em> ce site, grâce à ce site.</h1>
   </section>
 
   <section class="page-section" id="presentation" aria-labelledby="presentation-title">
@@ -76,6 +78,7 @@
 <footer class="site-footer">
   <p>Vibe WebMaster — guide gratuit pour créer votre site vitrine avec un assistant IA.</p>
 </footer>
+
 <script>
 (function () {
   var nav = document.querySelector('.site-nav');
@@ -84,7 +87,17 @@
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+  var btn = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('menu-principal');
+  if (btn && menu) {
+    btn.addEventListener('click', function () {
+      var open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    });
+  }
 })();
 </script>
+
 </body>
 </html>
