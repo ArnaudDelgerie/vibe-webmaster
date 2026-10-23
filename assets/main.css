@@ -110,7 +110,7 @@ main { display: block; }
   font-size: var(--font-size-subheading);
   font-weight: var(--font-weight-heading);
 }
-.page-section p { max-width: 75ch; }
+.page-section p { max-width: none; }
 
 /* --- Tuiles guide --- */
 .tiles {
@@ -170,7 +170,7 @@ a:hover { color: var(--color-primary-dark); }
 .page-intro {
   font-size: var(--font-size-subheading);
   color: var(--color-text-muted);
-  max-width: 75ch;
+  max-width: none;
 }
 
 /* --- Figures --- */
