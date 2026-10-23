@@ -90,15 +90,14 @@ body {
 /* --- Sections --- */
 main { display: block; }
 .page-section {
-  max-width: var(--max-width);
-  margin: 0 auto;
+  max-width: none;
   padding: calc(var(--spacing) * 2.5) var(--spacing);
 }
+.page-section > * { max-width: var(--max-width); margin-left: auto; margin-right: auto; }
 .page-section.alt {
   max-width: none;
   background: var(--color-background-alt);
 }
-.page-section.alt > * { max-width: var(--max-width); margin-left: auto; margin-right: auto; }
 .page-section h2 {
   font-family: var(--font-heading);
   font-size: var(--font-size-heading);
@@ -117,7 +116,7 @@ main { display: block; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: var(--spacing);
-  max-width: var(--max-width);
+  max-width: none;
   margin: var(--spacing) auto 0;
 }
 .tile {
