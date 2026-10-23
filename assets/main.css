@@ -109,14 +109,12 @@ main { display: block; }
   font-size: var(--font-size-subheading);
   font-weight: var(--font-weight-heading);
 }
-.page-section p { max-width: none; }
 
 /* --- Tuiles guide --- */
 .tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: var(--spacing);
-  max-width: none;
   margin: var(--spacing) auto 0;
 }
 .tile {
@@ -169,7 +167,6 @@ a:hover { color: var(--color-primary-dark); }
 .page-intro {
   font-size: var(--font-size-subheading);
   color: var(--color-text-muted);
-  max-width: none;
 }
 
 /* --- Figures --- */
